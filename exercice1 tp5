@@ -1,0 +1,21 @@
+let a=prompt("donne la valeur a ");
+let b=prompt("donne le no bre b ");
+a=parseFloat(a);
+b=parseFloat(b);
+if(isNaN(a)||isNaN(b)){
+    prompt("donne les deux nombre ");
+}
+let summe=a+b;
+let diffierence=a-b;
+let proudouit= a*b;
+if(b!=0){
+    let dv=a/b;
+    console.log("la summe est ",summe);
+    console.log("la deiffernec est ",diffierence);
+    console.log("la proudouit est ",proudouit);
+    console.log("la division est ",dv);
+
+}
+else{
+    console.log("impseble disieure pore 0");
+}
