@@ -1,0 +1,18 @@
+let nombre=Math.floor(Math.random()*10)+1;
+let conteur=0;
+let n;
+do{
+    n=prompt("donne un nombre enter 1 est 10 ");
+    conteur++;
+    if(n>nombre){
+        console.log("plue ground");
+    }
+    else if(n<nombre){
+        console.log("plue petite ");
+    }
+    else{
+        console.log("le nombre est vrie ");
+        break;
+    }
+} while(n!=nombre);
+console.log("le nombre pour acsipit le code est ",conteur);
