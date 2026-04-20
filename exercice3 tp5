@@ -1,0 +1,21 @@
+let QUESTION=[["Quelle est la capitale de france","paris"],["Quelle est la capitale de de marooce","Rabat"],["Qulle le roi de marooce","mohmade 6"]];
+function lancerQuiz(){
+    let reponse;
+    let nombre_corecte=0;
+    for(let i=0;i<QUESTION.length;i++){
+        let qistioN=QUESTION[i][0];
+        let bonne_reponce=QUESTION[i][1];
+        reponse=prompt(qistioN);
+        if (reponse==bonne_reponce){
+            console.log("Repomse just");
+            nombre_corecte++;
+
+        }
+        else{
+            console.log("Reponse folse ");
+        }
+
+    }
+    console.log("vous aves repondu correctement a " + nombre_corecte + "a QUESTION " +QUESTION.length);
+}
+lancerQuiz();
